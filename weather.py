@@ -54,7 +54,7 @@ class WeatherMod(loader.Module):
 
     def __init__(self):
         self.config = loader.ModuleConfig("DEFAULT_LOCATION", None, lambda m: self.strings("doc_default_loc", m),
-                                          "API_KEY", None, lambda m: self.strings("doc_api_key", m),
+                                          "API_KEY", "458d700fdcb1d6967a55a9ee644ea9e7", lambda m: self.strings("doc_api_key", m),
                                           "TEMP_UNITS", "celsius", lambda m: self.strings("doc_temp_units", m))
         self._owm = None
 
